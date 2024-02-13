@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: black;
+}
+
+.obshiy{
+	width: 100vw;
+	height: 100vh;
+	background: black;
+}	
+.image{
+	margin-top: 5%;
+	margin-left: 5%;
+	padding: 20px 10px;
+	border: none;
+	border-radius: 50px;
+	background: radial-gradient(circle, rgba(0,10,61,1) 43%, rgba(0,232,238,1) 100%);
+	color: #f5f0e1;
+	transition: 1s;
+}
+.image:hover{
+	width: 500px;
+	height: 500px;
+	background: url('../uycha.png') no-repeat;
+	background-size: 500px 500px;
+	margin-right: 100px;
+}
+
+.cursor{
+	margin-top: 5%;
+	margin-left: 5%;
+	padding: 20px 20px;
+	border-radius: 50px;
+	border: none;
+	background: radial-gradient(circle, rgba(0,10,61,1) 0%, rgba(0,232,238,1) 100%);
+	color: #f5f0e1;
+	transition: 1s;
+
+}
+
+.cursor:hover{
+	padding: 30px 30px;
+	animation: anime 1s infinite;
+
+}
+
+@keyframes anime{
+	0%,100%{
+		background: radial-gradient(circle, rgba(0,10,61,1) 0%, rgba(0,232,238,1) 100%);
+		color: white;
+	}
+	10%{
+		background: radial-gradient(circle, rgba(5,13,50,1) 10%, rgba(0,232,238,1) 100%);
+		color: blue;
+	}
+	20%{
+		background: radial-gradient(circle, rgba(5,13,50,1) 20%, rgba(0,232,238,1) 100%);
+		color: yellow;
+	}
+	30%{
+		background: radial-gradient(circle, rgba(5,13,50,1) 30%, rgba(0,232,238,1) 100%);
+		color: red;
+	}
+	40%{
+		background: radial-gradient(circle, rgba(5,13,50,1) 40%, rgba(0,232,238,1) 100%);
+		color: purple;
+	}
+	50%{
+		background: radial-gradient(circle, rgba(5,13,50,1) 50%, rgba(0,232,238,1) 100%);
+		color: lightcyan;
+	}
+	60%{
+		background: radial-gradient(circle, rgba(5,13,50,1) 40%, rgba(0,232,238,1) 100%);
+		color: green;
+	}
+	70%{
+		background: radial-gradient(circle, rgba(5,13,50,1) 30%, rgba(0,232,238,1) 100%);
+		color: pink;
+	}
+	80%{
+		background: radial-gradient(circle, rgba(5,13,50,1) 20%, rgba(0,232,238,1) 100%);
+		color: orange;
+	}
+	90%{
+		background: radial-gradient(circle, rgba(5,13,50,1) 10%, rgba(0,232,238,1) 100%);
+		color: lightcyan;
+	}
+}
+
+.button{
+	margin-top: 5%;
+	margin-left: 5%;
+	padding: 20px 20px;
+	border-radius: 50px;
+	border: none;
+	background: radial-gradient(circle, rgba(0,10,61,1) 0%, rgba(0,232,238,1) 100%);
+	color: #f5f0e1;
+	transition: 1s;
+
+}
+
+.button:active{
+	animation: anium 3s infinite;
+}
+
+@keyframes anium{
+	0%,100%{
+		margin: 0;
+	}
+	25%{
+		margin-top: 500px;
+		background: lightblue;
+	}
+	50%{
+		margin-left: 500px;
+		background: lightgoldenrodyellow;
+	}
+}
